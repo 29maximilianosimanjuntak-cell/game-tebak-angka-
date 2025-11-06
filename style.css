@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa; /* Warna background: Biru muda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff; /* Latar belakang kotak game: Putih */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #00796b; /* Warna Judul: Hijau tua */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.stats-area {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Area Input dan Tombol */
+.input-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#tebakanInput {
+    padding: 12px;
+    font-size: 1em;
+    width: 150px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+#tebakanInput:focus {
+    border-color: #00bcd4; /* Fokus input: Biru terang */
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#tombolTebak {
+    background-color: #4CAF50; /* Warna tombol tebak: Hijau */
+    color: white;
+}
+
+#tombolTebak:hover {
+    background-color: #45a049;
+}
+
+#tombolReset {
+    background-color: #00bcd4; /* Warna tombol reset: Biru */
+    color: white;
+    margin-top: 10px;
+}
+
+#tombolReset:hover {
+    background-color: #00acc1;
+}
+
+/* Area Pesan/Feedback */
+#pesan {
+    min-height: 40px; /* Memastikan ruang tetap ada */
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Kelas untuk Feedback (dikelola oleh JS) */
+.low {
+    color: #e65100; /* Orange tua */
+}
+
+.high {
+    color: #d32f2f; /* Merah tua */
+}
+
+.correct {
+    color: #388e3c; /* Hijau tua */
+}

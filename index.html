@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Angka Misteri</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        #game-container { border: 2px solid #ccc; padding: 20px; border-radius: 10px; max-width: 400px; margin: 0 auto; background-color: #f9f9f9; }
+        #pesan { font-size: 1.2em; margin: 15px 0; min-height: 40px; }
+        #tebakanInput { padding: 10px; font-size: 1em; width: 100px; text-align: center; border-radius: 5px; border: 1px solid #aaa; }
+        button { padding: 10px 15px; margin: 5px; border: none; border-radius: 5px; cursor: pointer; }
+        #tombolTebak { background-color: #4CAF50; color: white; }
+        #tombolTebak:hover { background-color: #45a049; }
+        .tombol-reset { background-color: #008CBA; color: white; }
+        .tombol-reset:hover { background-color: #007bb5; }
+        #jumlahTebakan { margin-bottom: 10px; font-weight: bold; color: #555; }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Tebak Angka Misteri!</h1>
+        <p>Tebak angka yang saya pikirkan, antara 1 dan 100.</p>
+        
+        <p id="jumlahTebakan">Tebakan ke-0</p>
+
+        <p id="pesan">Saya sudah memikirkan angka antara 1 dan 100. Coba tebak!</p>
+        
+        <div>
+            <label for="tebakanInput">Masukkan Tebakan Anda:</label>
+            <input type="number" id="tebakanInput" min="1" max="100" required>
+            
+            <button id="tombolTebak" onclick="prosesTebakan()">Tebak!</button>
+        </div>
+        
+        <button class="tombol-reset" onclick="mulaiPermainan()">Mulai Game Baru</button>
+        <script src="game.js"> </script>
+    </div>
+</script>
+</body>
+</html>
